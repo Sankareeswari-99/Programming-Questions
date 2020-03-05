@@ -1,0 +1,22 @@
+def issquare(num):
+  sqroot=num**(1/2)
+  if round(sqroot)**2==num:
+    return True
+  else:
+    return False
+
+def iscube(num):
+  cuberoot=num**(1/3)
+  if round(cuberoot)**3==num:
+    return True
+  else:
+    return False
+
+
+num=int(input())
+for i in range(num-1,0,-1):
+  if(issquare(i) and iscube(i)):
+    print(i)
+    break
+  
+
